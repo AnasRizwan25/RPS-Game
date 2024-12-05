@@ -32,21 +32,6 @@ document.body.addEventListener('keydown', (event) => {
 
 
 
-// if (score === null) {
-//   score = {
-//     win :  0,
-//     lose : 0,
-//     tie : 0
-//   }
-// };
-
-// if (!score) {
-//   score = {
-//     win :  0,
-//     lose : 0,
-//     tie : 0
-//   }
-// };
 jsWLT();
 
 
@@ -195,22 +180,22 @@ function res() {
       a.innerHTML = `
       <p>Are you sure you want to reset the score? <button class="yes">Yes</button> <button  class="no">No</button></p>
     `;
-    const x = document.querySelector('.yes');
-    const y = document.querySelector('.no');
+      const x = document.querySelector('.yes');
+      const y = document.querySelector('.no');
 
-    x.addEventListener('click', () => {
-      score.win = 0;
-      score.lose = 0;
-      score.tie = 0;
-      localStorage.removeItem('score');
-      jsWLT();
-      a.innerHTML = '';
+      x.addEventListener('click', () => {
+        score.win = 0;
+        score.lose = 0;
+        score.tie = 0;
+        localStorage.removeItem('score');
+        jsWLT();
+        a.innerHTML = '';
 
-    });
-    y.addEventListener('click',() =>{
-      a.innerHTML = '';
-    
-    });
+      });
+      y.addEventListener('click', () => {
+        a.innerHTML = '';
+
+      });
 
     });
 }
@@ -252,10 +237,10 @@ document.body.addEventListener('keydown', (event) => {
       a.innerHTML = '';
 
     });
-    
-    y.addEventListener('click',() =>{
+
+    y.addEventListener('click', () => {
       a.innerHTML = '';
-    
+
     });
   }
 });

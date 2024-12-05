@@ -1,15 +1,21 @@
-body{
+body {
   font-family: "Poppins", system-ui;
   font-weight: 400;
   font-style: normal;
-  background-color: rgb(25, 25, 25);
+  background: linear-gradient(135deg, #1e3c72, #2a5298, #1d3557);
   color: white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
-.para-logo{
+
+.para-logo {
   font-weight: bold;
   font-size: 30px;
+  text-align: center;
 }
-.rps-button{
+
+.rps-button {
   height: 120px;
   width: 120px;
   color: white;
@@ -19,32 +25,49 @@ body{
   margin-right: 10px;
   cursor: pointer;
 }
-.pic1{
+
+.pic1 {
   width: 50px;
 }
-.result-para{
+
+.result-para {
   font-weight: bold;
   font-size: 25px;
-  margin-top: 50px;
+  margin-top: 45px;
+  text-align: center;
 }
-.scored{
+
+.scored {
   margin-top: 60px;
 }
-.reset-button{
-  padding: 8px 15px;
+
+
+.reset-button {
+  font-family: "Poppins", system-ui;
+  padding: 8px 12px;
   font-size: 15px;
   cursor: pointer;
   border: none;
-  border-radius: 2px;
+  border-radius: 4px;
   background-color: white;
   margin-right: 5px;
 }
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 @media screen and (max-width:414px) {
-  .para-logo{
+  .para-logo {
     font-weight: bold;
     font-size: 29px;
   }
-  .rps-button{
+
+  .rps-button {
     height: 90px;
     width: 90px;
     color: white;
@@ -54,7 +77,45 @@ body{
     margin-right: 8px;
     cursor: pointer;
   }
-  .pic1{
+
+  .pic1 {
     width: 40px;
+  }
+}
+button{
+  cursor: pointer;
+}
+@media (min-width:1700px) and (max-width:3000px) {
+  
+  .para-logo {
+    font-size: 35px;
+    text-align: center;
+  }
+  
+  .rps-button {
+    height: 125px;
+    width: 125px;
+  }
+  
+  .pic1 {
+    width: 70px;
+  }
+  
+  .result-para {
+    font-size: 30px;
+  }
+  
+  .scored {
+    margin-top: 60px;
+  }
+  
+  
+  .reset-button {
+    padding: 8px 12px;
+    font-size: 18px;
+  }
+  
+  .decision,.style-score{
+    font-size: 18px;
   }
 }

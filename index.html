@@ -5,40 +5,46 @@
   <meta charset="UTF-8">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,500&display=swap"
+    rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Paper Scissors Game</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <p class="para-logo" >Rock Paper Scissors</p>
 
-  <button class="rps-button r-button">
-    <img class="pic1" src="./images/rock-emoji.png" alt="rock-logo">
-  </button>
+  
+  <div class="display">
+    
+    <p class="para-logo">Rock Paper Scissors</p>
+    <div>
+      <button class="rps-button r-button">
+        <img class="pic1" src="./images/rock-emoji.png" alt="rock-logo">
+      </button>
 
-  <button class="rps-button p-button">
-    <img class="pic1" src="./images/paper-emoji.png" alt="papar-logo">
-  </button>
+      <button class="rps-button p-button">
+        <img class="pic1" src="./images/paper-emoji.png" alt="papar-logo">
+      </button>
 
-  <button class="rps-button s-button">
-    <img class="pic1" src="./images/scissors-emoji.png" alt="scissor">
-  </button>
+      <button class="rps-button s-button">
+        <img class="pic1" src="./images/scissors-emoji.png" alt="scissor">
+      </button>
+    </div>
+    
+    <div>
+      <p class="js-result result-para"></p>
+      <p class="js-decision decision"></p>
+      <p class="js-wlt scored style-score"></p>
+    </div>
+    
+    <div>
+      <button class="reset-button reset">Reset Score</button>
+      <button class="reset-button auto auto1">Auto Save</button>
+    </div>
 
-  <p class="js-result result-para"></p>
-
-  <p class="js-decision"></p>
-
-  <p class="js-wlt scored"></p>
-
-
-  <button class="reset-button reset">Reset Score</button>
-
-
-  <button class="reset-button auto auto1">Auto Save</button>
-
-  <p class="result"></p>
+    <p class="result"></p>
+  </div>
 
 
   <script src="./app.js"></script>
